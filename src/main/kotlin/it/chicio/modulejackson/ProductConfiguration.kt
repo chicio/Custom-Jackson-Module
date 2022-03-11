@@ -11,9 +11,9 @@ class ProductConfiguration {
     @Bean
     fun productRepository(): ProductRepository = ProductRepository()
 
+    @Bean
     @Primary
-    fun objectMapper(): ObjectMapper? {
-        val mapper = ObjectMapper()
-        return mapper
+    fun objectMapper(): ObjectMapper {
+        return ObjectMapper().findAndRegisterModules()
     }
 }
