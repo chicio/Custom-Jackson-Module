@@ -7,6 +7,7 @@
         <groupId>it.chicio.custom-module-jackson</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
+
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>webapp</artifactId>
@@ -24,8 +25,17 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <version>2.6.4</version>
             <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.module</groupId>
+            <artifactId>jackson-module-kotlin</artifactId>
+            <version>2.13.1</version>
+        </dependency>
+        <dependency>
+            <groupId>it.chicio.custom-module-jackson</groupId>
+            <artifactId>money-module</artifactId>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
 
