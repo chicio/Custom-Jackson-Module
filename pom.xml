@@ -12,10 +12,10 @@
 		<version>2.6.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>it.chicio.customermodulejackson</groupId>
-	<artifactId>custommodulejackson</artifactId>
+	<groupId>it.chicio.custom-module-jackson</groupId>
+	<artifactId>custom-module-jackson</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>custommodulejackson</name>
+	<name>custom-module-jackson</name>
 	<description>Demo project to show how to write a customer serialised/deserializer for Jackson</description>
 	<properties>
 		<java.version>11</java.version>
@@ -24,7 +24,7 @@
 	</properties>
 	<dependencies>
 		<dependency>
-			<groupId>it.chicio.customermodulejackson</groupId>
+			<groupId>it.chicio.custom-module-jackson</groupId>
 			<artifactId>money-module</artifactId>
 			<version>${project.version}</version>
 		</dependency>
