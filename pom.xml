@@ -3,25 +3,31 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<packaging>pom</packaging>
+
 	<modules>
 		<module>money-module</module>
+		<module>webapp</module>
 	</modules>
+
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.6.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+
 	<groupId>it.chicio.custom-module-jackson</groupId>
 	<artifactId>custom-module-jackson</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>custom-module-jackson</name>
 	<description>Demo project to show how to write a customer serialised/deserializer for Jackson</description>
+
 	<properties>
 		<java.version>11</java.version>
 		<kotlin.version>1.6.10</kotlin.version>
 		<arrow.version>1.0.0</arrow.version>
 	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>it.chicio.custom-module-jackson</groupId>
@@ -41,11 +47,6 @@
 			<artifactId>kotlin-stdlib-jdk8</artifactId>
 		</dependency>
 
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
 		<dependency>
 			<groupId>org.javamoney.moneta</groupId>
 			<artifactId>moneta-core</artifactId>
@@ -70,7 +71,7 @@
 		<dependency>
 			<groupId>com.fasterxml.jackson.module</groupId>
 			<artifactId>jackson-module-kotlin</artifactId>
-			<version>2.13.0</version>
+			<version>2.13.1</version>
 		</dependency>
 	</dependencies>
 
