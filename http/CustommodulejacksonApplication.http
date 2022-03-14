@@ -1,5 +1,19 @@
-GET http://127.0.0.1:8080/product/1
+GET http://127.0.0.1:8080/product/4
 Content-Type: application/json
 
 ###
 
+
+POST http://127.0.0.1:8080/product/add
+Content-Type: application/json
+
+{
+  "idProduct": 4,
+  "description": "Still yet another product",
+  "amount": {
+    "value": "15.50",
+    "currency": "EUR"
+  }
+}
+
+###

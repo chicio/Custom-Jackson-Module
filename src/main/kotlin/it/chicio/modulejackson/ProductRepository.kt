@@ -1,12 +1,14 @@
 package it.chicio.modulejackson
 
+import arrow.core.None
 import arrow.core.Option
+import arrow.core.some
 import arrow.core.toOption
 import org.javamoney.moneta.Money
 import java.math.BigDecimal
 
 class ProductRepository {
-    private val products = listOf(
+    private val products = mutableListOf(
         Product(
             1,
             "A product",
@@ -26,4 +28,16 @@ class ProductRepository {
 
     fun get(idProduct: Long): Option<Product> =
         products.find { it.idProduct == idProduct }.toOption()
+
+    fun add(product: Product): Option<Unit> =
+        products
+            .find { it.idProduct == product.idProduct }
+            .toOption()
+            .fold(
+                {
+                    products.add(product)
+                    Unit.some()
+                },
+                { None }
+            )
 }

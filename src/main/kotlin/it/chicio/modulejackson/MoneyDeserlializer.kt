@@ -10,7 +10,7 @@ import java.math.BigDecimal
 open class MoneyDeserializer : StdDeserializer<Money>(Money::class.java) {
     override fun deserialize(jsonParser: JsonParser, obj: DeserializationContext): Money {
         val node: JsonNode = jsonParser.codec.readTree(jsonParser)
-        val amount = BigDecimal(node.get("amount").asText())
+        val amount = BigDecimal(node.get("value").asText())
         val currency: String = node.get("currency").asText()
 
         return Money.of(amount, currency)
