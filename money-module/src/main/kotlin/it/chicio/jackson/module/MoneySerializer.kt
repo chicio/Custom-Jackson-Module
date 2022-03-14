@@ -1,4 +1,4 @@
-package it.chicio.modulejackson
+package it.chicio.jackson.module
 
 import com.fasterxml.jackson.core.JsonGenerator
 import com.fasterxml.jackson.databind.SerializerProvider

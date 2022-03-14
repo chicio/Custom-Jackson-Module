@@ -1,4 +1,4 @@
-package it.chicio.modulejackson
+package it.chicio.jackson.module
 
 import com.fasterxml.jackson.databind.module.SimpleDeserializers
 import com.fasterxml.jackson.databind.module.SimpleModule
