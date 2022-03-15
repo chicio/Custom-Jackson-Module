@@ -1,7 +1,6 @@
 # Custom module Jackson
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.
-com/chicio/custom/master/LICENSE.md)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/chicio/Custom-Jackson-Module/main/LICENSE.md)
 
 An example Kotlin project created for my blog post ["A custom module for Jackson object mapper using Java Service 
 Provider"](xxx).
