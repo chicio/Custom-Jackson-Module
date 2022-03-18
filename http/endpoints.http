@@ -1,11 +1,11 @@
-GET http://127.0.0.1:8080/product/4
+GET http://127.0.0.1:8080/product/3
 Content-Type: application/json
 
 ###
 
 
 POST http://127.0.0.1:8080/product/add
-Content-Type: application/jsonπ
+Content-Type: application/json
 
 {
   "idProduct": 4,
